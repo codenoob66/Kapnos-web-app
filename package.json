@@ -1,0 +1,30 @@
+{
+  "name": "kapnos-web-app",
+  "version": "1.0.0",
+  "description": "Simple ecommerce app for a vape shop",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon Backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codenoob66/Kapnos-web-app.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codenoob66/Kapnos-web-app/issues"
+  },
+  "homepage": "https://github.com/codenoob66/Kapnos-web-app#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
