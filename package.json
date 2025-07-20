@@ -4,7 +4,8 @@
   "description": "Simple ecommerce app for a vape shop",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon Backend/server.js"
+    "dev": "nodemon Backend/server.js",
+    "start": "node Backend/server.js"
   },
   "repository": {
     "type": "git",
