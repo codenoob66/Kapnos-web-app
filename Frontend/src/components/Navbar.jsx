@@ -35,9 +35,12 @@ const Navbar = () => {
           <Link to={"/"}>Product Store 🛒</Link>
         </Text>
         <HStack>
-          <Button>
-            <PlusSquareIcon></PlusSquareIcon>
-          </Button>
+          <Link to={"/create"}>
+            <Button>
+              <PlusSquareIcon fontSize={20}></PlusSquareIcon>
+            </Button>
+          </Link>
+
           <Button onClick={toggleColorMode}>
             {colorMode === "light" ? <IoMoon /> : <LuSun />}
           </Button>
