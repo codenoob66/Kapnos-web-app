@@ -151,6 +151,17 @@ const ProductCard = ({ product }) => {
                   })
                 }
               />
+              <Input
+                placeholder="Description"
+                name="description"
+                value={updatedProduct.description}
+                onChange={(e) =>
+                  setUpdatedProduct({
+                    ...updatedProduct,
+                    description: e.target.value,
+                  })
+                }
+              />
             </VStack>
           </ModalBody>
 
