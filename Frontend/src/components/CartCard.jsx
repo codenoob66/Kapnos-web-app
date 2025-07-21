@@ -1,4 +1,4 @@
-import { Container, VStack } from "@chakra-ui/react";
+import { Container, Image, VStack } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Text } from "@chakra-ui/react";
@@ -19,7 +19,13 @@ const CartCard = () => {
           Current Items in your cart🚀
         </Text>
         {cart.map((item) => (
-          <Text>{item.name}</Text>
+          <Image
+            src={item.image}
+            alt={item.name}
+            h={48}
+            w="full"
+            objectFit="cover"
+          />
         ))}
         {cart.length === 0 && (
           <Text
