@@ -102,7 +102,7 @@ const ProductCard = ({ product }) => {
           ${product.price}
         </Text>
 
-        <Text fontWeight="bold" fontSize="sm" color={textColor} mb={4}>
+        <Text fontWeight="bold" fontSize="xl" color={textColor} mb={4}>
           ${product.description}
         </Text>
 
