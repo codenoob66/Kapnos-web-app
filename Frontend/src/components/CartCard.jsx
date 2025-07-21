@@ -19,13 +19,17 @@ const CartCard = () => {
           Current Items in your cart🚀
         </Text>
         {cart.map((item) => (
-          <Image
-            src={item.image}
-            alt={item.name}
-            h={48}
-            w="full"
-            objectFit="cover"
-          />
+          <Box>
+            <Image
+              src={item.image}
+              alt={item.name}
+              h={48}
+              w="full"
+              objectFit="cover"
+            />
+            <Text>{item.name}</Text>
+            <Text>{item.price}</Text>
+          </Box>
         ))}
         {cart.length === 0 && (
           <Text
