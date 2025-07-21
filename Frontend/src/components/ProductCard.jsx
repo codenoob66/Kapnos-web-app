@@ -27,6 +27,8 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
+  const { addToCart } = useCartStore();
+
   const handleAddToCart = () => {
     addToCart(product);
   };
@@ -120,7 +122,7 @@ const ProductCard = ({ product }) => {
           />
           <IconButton
             icon={<FaShoppingCart />}
-            onClick={() => handleAddToCart(product)}
+            onClick={handleAddToCart}
             colorScheme="orange"
           />
         </HStack>
