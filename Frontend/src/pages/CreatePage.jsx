@@ -38,7 +38,7 @@ const CreatePage = () => {
         isClosable: true,
       });
     }
-    setNewProduct({ name: "", price: "", image: "" });
+    setNewProduct({ name: "", price: "", image: "", description: "" });
   };
 
   return (
@@ -79,6 +79,15 @@ const CreatePage = () => {
               value={newProduct.image}
               onChange={(e) =>
                 setNewProduct({ ...newProduct, image: e.target.value })
+              }
+            />
+
+            <Input
+              placeholder="Description"
+              name="Description"
+              value={newProduct.description}
+              onChange={(e) =>
+                setNewProduct({ ...newProduct, description: e.target.value })
               }
             />
 
