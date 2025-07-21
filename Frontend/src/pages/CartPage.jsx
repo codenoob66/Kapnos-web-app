@@ -1,7 +1,12 @@
 import React from "react";
+import CartCard from "../components/CartCard";
 
 const CartPage = () => {
-  return <div>Welcome to the cart page</div>;
+  return (
+    <>
+      <CartCard />
+    </>
+  );
 };
 
 export default CartPage;
