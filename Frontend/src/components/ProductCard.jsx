@@ -22,6 +22,7 @@ import {
 } from "@chakra-ui/react";
 import { useProductStore } from "../store/product";
 import { useState } from "react";
+import { CiShoppingCart } from "react-icons/ci";
 
 const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
@@ -109,6 +110,7 @@ const ProductCard = ({ product }) => {
             onClick={() => handleDeleteProduct(product._id)}
             colorScheme="red"
           />
+          <IconButton icon={<CiShoppingCart />} />
         </HStack>
       </Box>
 
