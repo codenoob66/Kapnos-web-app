@@ -7,6 +7,7 @@ import {
   useColorMode,
 } from "@chakra-ui/react";
 import { PlusSquareIcon } from "@chakra-ui/icons";
+import { FaShoppingCart } from "react-icons/fa";
 import { LuSun } from "react-icons/lu";
 import { IoMoon } from "react-icons/io5";
 import { Link } from "react-router-dom";
@@ -38,6 +39,12 @@ const Navbar = () => {
           <Link to={"/create"}>
             <Button>
               <PlusSquareIcon fontSize={20}></PlusSquareIcon>
+            </Button>
+          </Link>
+
+          <Link to={"/cart"}>
+            <Button>
+              <FaShoppingCart />
             </Button>
           </Link>
 
