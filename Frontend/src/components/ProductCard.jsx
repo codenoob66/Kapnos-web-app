@@ -102,6 +102,10 @@ const ProductCard = ({ product }) => {
           ${product.price}
         </Text>
 
+        <Text fontWeight="bold" fontSize="sm" color={textColor} mb={4}>
+          ${product.description}
+        </Text>
+
         <HStack spacing={2}>
           <IconButton icon={<EditIcon />} onClick={onOpen} colorScheme="blue" />
           <IconButton
