@@ -22,14 +22,9 @@ import {
 } from "@chakra-ui/react";
 import { useProductStore } from "../store/product";
 import { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
-import { useCart } from "../cart/cart";
 
 const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
-  // const handdleAddToCart = () => {
-  //   useCart();
-  // };
 
   const textColor = useColorModeValue("gray.600", "gray.200");
   const bg = useColorModeValue("white", "gray.800");
@@ -114,11 +109,6 @@ const ProductCard = ({ product }) => {
             onClick={() => handleDeleteProduct(product._id)}
             colorScheme="red"
           />
-          {/* <IconButton
-            icon={<FaShoppingCart />}
-            onClick={() => handdleAddToCart}
-            colorScheme="orange"
-          /> */}
         </HStack>
       </Box>
 
