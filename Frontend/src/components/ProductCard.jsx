@@ -27,7 +27,6 @@ import { FaShoppingCart } from "react-icons/fa";
 
 const ProductCard = ({ product }) => {
   const [updatedProduct, setUpdatedProduct] = useState(product);
-  const addToCart = useCartStore((state) => state.addToCart);
   const handleAddToCart = () => {
     addToCart(product);
   };
