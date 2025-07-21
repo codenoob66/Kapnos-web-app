@@ -110,7 +110,7 @@ const ProductCard = ({ product }) => {
             onClick={() => handleDeleteProduct(product._id)}
             colorScheme="red"
           />
-          <IconButton icon={<CiShoppingCart />} />
+          <IconButton icon={<CiShoppingCart />} colorScheme="orange" />
         </HStack>
       </Box>
 
